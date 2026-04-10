@@ -17,4 +17,23 @@ for (int i = 0; i < n; i++)
 
 double promedio = (double)suma / n;
 
+Console.WriteLine($"El promedio es: {promedio}");
+
+
+Console.WriteLine("Números por encima del promedio:");
+int contador = 0;
+
+for (int i = 0; i < n; i++)
+{
+	if (numeros[i] > promedio)
+	{
+		Console.WriteLine(numeros[i]);
+		contador++;
+	}
+}
+
+
+Console.WriteLine($"Cantidad de números por encima del promedio: {contador}");
+
+
 
